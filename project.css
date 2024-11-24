@@ -239,7 +239,7 @@ main{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 20px;
+    padding: 20px 0px;
     box-shadow: rgba(100, 100, 111, 0.311) 0px 7px 29px 0px;
 }
 
@@ -251,6 +251,8 @@ main{
 }
 .why-you-choose .text{
     line-height: 1.5;
+    border: 2px solid;
+    width: 100%;
     color: white;
 
 }
