@@ -14,10 +14,8 @@ html {
   }
 
 nav{
-    /* border: 2px solid; */
     display: flex;
     justify-content: center;
-    /* background-color: #D64601; */
     position: sticky !important;
     z-index: 10;
     top: 0;
@@ -26,15 +24,6 @@ nav{
 
 header{
     background-image: url(images/gradient.png);
-    /* background: hsla(281, 97%, 24%, 1);
-
-    background: linear-gradient(270deg, hsla(281, 97%, 24%, 1) 0%, hsla(340, 40%, 42%, 1) 80%, hsla(18, 88%, 66%, 1) 100%);
-
-    background: -moz-linear-gradient(270deg, hsla(281, 97%, 24%, 1) 0%, hsla(340, 40%, 42%, 1) 80%, hsla(18, 88%, 66%, 1) 100%);
-
-    background: -webkit-linear-gradient(270deg, hsla(281, 97%, 24%, 1) 0%, hsla(340, 40%, 42%, 1) 80%, hsla(18, 88%, 66%, 1) 100%);
-
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#530278", endColorstr="#97405D", GradientType=1 ); */
     background-size: cover;
 
 }
@@ -45,14 +34,11 @@ header{
     align-items: center;
     width: 85%;
     height: 80px;
-    /* border: 2px solid; */
-
 }
 
 nav img{
     width: 180px;
     height: 45px;
-    /* border: 2px solid; */
 }
 
 .navigation-links ul{
@@ -75,7 +61,9 @@ nav img{
 }
 
 
-
+.menu{
+    display: none;
+}
 .menu .fa-bars{
     font-size: 2rem;
     display: none;
@@ -86,12 +74,20 @@ nav img{
     height: 50px;
     border-radius: 10px;
     border: none;
-    color: #F3893F;
+    background-color: #F3893F;
+    color: white;
     gap: 5px;
     font-weight: 700;
     cursor: pointer;
-    /* border: 2px solid #F3893F; */
-    background-color: transparent;
+
+    /* background-color: transparent; */
+}
+
+.get-started-nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    margin-right: 10px;
 }
 
 .sticky{
@@ -107,30 +103,17 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* border: 2px solid #F3893F; */
-
-    /* gap: 50px; */
 }
 .first-big-container{
     background-size: cover;
     display: flex;
-    /* opacity: .9; */
-    /* border: 2px solid green; */
     align-items: center;
     justify-content: center;
     width: 100%;
     min-height: 80vh;
     position: relative;
-    /* z-index: -1; */
 }
-.first-big-container::before{
-    /* content: '';
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.383);
-    width: 100%;
-    height: 100%; */
-    /* z-index: -1; */
-}
+
 .first-background-container{
     width: 85%;
     display: flex;
@@ -138,7 +121,7 @@ main{
     align-items: center;
     gap: 50px;
     flex-wrap: wrap;
-    /* border: 2px solid green; */
+
 
 }
 .first-container{
@@ -177,7 +160,6 @@ main{
     height: 60px;
     border-radius: 15px;
     border: none;
-    font-weight: 500;
     cursor: pointer;
 }
 
@@ -188,10 +170,32 @@ main{
     color: white;
     cursor: pointer;
 }
+
+.get-started:hover{
+    transition: border .3s ease-out;
+    border: 2px solid #F3893F;
+}
+.get-started a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+.login a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+
 .login{
-    color: #F3893F;
+    color: white;
     background-color: #530278;
     font-weight: 700;
+}
+
+.login:hover{
+    transition: background-color .3s ease-out;
+    background-color: #F3893F;
 }
 .image {
     width: 50%;
@@ -253,7 +257,6 @@ main{
 }
 .why-you-choose .text{
     line-height: 1.5;
-    /* border: 2px solid; */
     width: 100%;
     color: white;
     text-align: justify;
@@ -264,7 +267,6 @@ main{
     justify-content: space-around;
 }
 .icon{
-    /* border: 2px solid; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -297,7 +299,6 @@ main{
 .benefit-containers img{
     width: 100px;
     height: 100px;
-    /* border: 2px solid; */
 }
 
 .benefit-box{
@@ -306,7 +307,6 @@ main{
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    /* border: 2px  solid; */
     background-color: #530278;
     padding: 40px 20px;
     border-radius: 30px;
@@ -314,7 +314,6 @@ main{
     
 }
 .benefit-box .images{
-    /* border: 2px solid; */
     display: flex;
     align-items: center;
     justify-content: center
@@ -341,11 +340,16 @@ main{
     font-size: 1.1rem;
 }
 
+.container-text ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 .third-big-container{
     display: flex;
     justify-content: center;
     background-color: white;
-    /* justify-content: space-around; */
 }
 .third-container{
     width: 85%;
@@ -372,7 +376,6 @@ main{
     display: flex;
     flex-direction: column;
     width: 300px;
-    /* border: 2px solid; */
     background-color: white;
     border-radius: 20px;
     padding: 20px 30px;
@@ -382,16 +385,12 @@ main{
 }
 
 .features-box .images{
-    /* border: 2px solid; */
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    /* background-color: #530278; */
     display: flex;
     justify-content: center;
     align-items: center;
-    /* box-shadow: 20px -15px #F5895C; */
-
 }
 .features-box img{
     width: 130px;
@@ -414,12 +413,9 @@ main{
 .fourth-big-container{
     display: flex;
     justify-content: center;
-    /* box-shadow: rgba(100, 100, 111, 0.35) 0px 7px 29px 0px; */
-
 }
 .fourth-container{
     width: 85%;
-    /* border: 2px solid; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -445,7 +441,6 @@ main{
 .pricing-table{
     display: flex;
     justify-content: center;
-    /* box-shadow: rgba(100, 100, 111, 0.35) 0px 7px 29px 0px; */
 }
 
 .big-container{
@@ -563,7 +558,12 @@ main{
 }
 
 hr {
-    border-color:#cccccc16; 
+    border-color:#cccccc16;
+  }
+.hr {
+    border-color:#cccccc91;
+    width: 90%; 
+    margin: auto;
   }
 .faq-question{
     /* height: 30px;
@@ -779,6 +779,10 @@ hr{
   .fixed-nav  a {
     color: #F3893F;
   }
+.fixed-nav .get-started-nav a{
+    color: white;
+}
+
   .fixed-nav .links a:hover {
     color: var(--clr-secondary);
   }
