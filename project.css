@@ -90,7 +90,7 @@ nav img{
     gap: 5px;
     font-weight: 700;
     cursor: pointer;
-    border: 2px solid #F3893F;
+    /* border: 2px solid #F3893F; */
     background-color: transparent;
 }
 
@@ -107,6 +107,8 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* border: 2px solid #F3893F; */
+
     /* gap: 50px; */
 }
 .first-big-container{
@@ -901,12 +903,24 @@ hr{
 }
 
 @media (max-width: 480px) {
+
+    html{
+
+    contain: content;
+
+    }
+
+    .container{
+        width: 100%;
+    }
     .company-logo img{
         width: 120px;
         height: 30px;
     }
    .image img{
-        display: none;
+    width: 450px;
+    position: relative;
+    left: -60px;
     }
     .icon{
         gap: 10px;
@@ -953,6 +967,7 @@ hr{
     }
     .container{
         width: 100%;
+        /* border: 2px solid; */
     }
 
     .benefit-containers{
