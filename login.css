@@ -147,7 +147,7 @@ main{
 @media (max-width: 480px){
 
     .container{
-        min-width: 380px;
+        min-width: 350px;
     }
     .input{
         width: 100%;
