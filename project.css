@@ -905,7 +905,16 @@ hr{
         cursor: pointer;
         color: white;
     }
-
+    .image img{
+        width: 450px;
+        position: relative;
+        left: -60px;
+        top: 10px;
+        }
+        .first-background-container{
+            padding-bottom: 0px;
+            overflow-y: hidden;
+        }
 }
 
 @media (max-width: 480px) {

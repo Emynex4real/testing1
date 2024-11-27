@@ -146,3 +146,25 @@ faqQuestion.forEach(question =>{
 })
 
 
+
+document.addEventListener("DOMContentLoaded", () => {
+    const elements = document.querySelectorAll('.show'); // Replace with your elements' selector
+    elements.forEach(element => {
+      element.classList.add('autoShow');
+    });
+  });
+  
+document.addEventListener("DOMContentLoaded", () => {
+    const elements = document.querySelectorAll('.left'); // Replace with your elements' selector
+    elements.forEach(element => {
+      element.classList.add('showLeft');
+    });
+  });
+  
+document.addEventListener("DOMContentLoaded", () => {
+    const elements = document.querySelectorAll('.right'); // Replace with your elements' selector
+    elements.forEach(element => {
+      element.classList.add('showRight');
+    });
+  });
+  
