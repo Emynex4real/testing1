@@ -118,6 +118,23 @@ main{
 
 }
 
+
+.back-to-menu{
+    /* border: 2px solid red; */
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.back-to-menu a{
+    /* font-size: 6rem; */
+    color: #530278;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+
 @media (max-width: 600px){
     .container{
 
