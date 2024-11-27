@@ -464,6 +464,7 @@ main{
     flex-direction: column;
     gap: 30px;
     padding: 20px 30px;
+    border-radius: 15px;
 }
 
 .big-container .head{
@@ -659,12 +660,6 @@ hr {
 
 
 
-
-
-
-
-
-
 .steps-taken{
     display: flex;
     gap: 80px;
@@ -804,7 +799,7 @@ hr{
     /* background-color: black; */
    }
    header{
-       overflow: hidden;
+       overflow-x: hidden;
 
    }
    nav{
