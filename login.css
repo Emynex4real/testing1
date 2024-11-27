@@ -17,7 +17,7 @@ html {
 main{
     background-image: url(images/gradient.png);
     background-size: 100% 100%; /* Stretch to fit */
-    background-size: cover;
+    background-repeat: no-repeat;
     min-height: 100vh;
     padding: 30px 0;
 }

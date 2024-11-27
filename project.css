@@ -916,23 +916,33 @@ hr{
 
     }
 
+    .first-background-container{
+        padding-bottom: 0px;
+    }
+
     .container{
         width: 100%;
+
     }
     .company-logo img{
-        width: 120px;
-        height: 30px;
+        width: 100px;
+        height: 25px;
     }
    .image img{
     width: 450px;
     position: relative;
     left: -60px;
+    top: 10px;
+    }
+
+    .menu .fas{
+        font-size: 1.5rem;
     }
     .icon{
         gap: 10px;
     }
     .icon i{
-        width: 60px;
+        width: 50px;
         height: 60px;
     }
     .steps-taken{

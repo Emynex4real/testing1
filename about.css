@@ -142,7 +142,7 @@ nav img{
 
 .second-container-text{
     max-width: 600px;
-    border: 2px  solid;
+    /* border: 2px  solid; */
     /* margin: auto; */
     display: flex;
     flex-direction: column;
