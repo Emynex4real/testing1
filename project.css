@@ -36,6 +36,7 @@ header{
 }
 
 .nav-container{
+    margin-top: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -928,6 +929,7 @@ hr{
 
     .first-background-container{
         padding-bottom: 0px;
+
     }
 
     .container{
@@ -1000,6 +1002,25 @@ hr{
         width: 100%;
     }
 
+
+    .miniLeft{
+        animation: leftMiniAnimation both;
+        animation-timeline: view(70% 20%);
+    }
+    
+    @keyframes leftMiniAnimation{
+        from{
+            opacity: 0;
+            -webkit-transform: translateY(-200px) scale(0.3);
+            transform: translateX(-200px) scale(0.3);
+        } to {
+            opacity: 1;
+            -webkit-transform: translateY(0) scale(1);
+            transform: translateY(0) scale(1);
+        }
+    }
+    
+
 }
 
 
@@ -1027,11 +1048,11 @@ hr{
 @keyframes showLeftAnimation{
     from{
         opacity: 0;
-        -webkit-transform: translateY(-200px) scale(0.3);
+        -webkit-transform: translateX(-200px) scale(0.3);
         transform: translateX(-200px) scale(0.3);
     } to {
         opacity: 1;
-        -webkit-transform: translateY(0) scale(1);
+        -webkit-transform: translateX(0) scale(1);
         transform: translateY(0) scale(1);
     }
 }

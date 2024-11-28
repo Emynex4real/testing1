@@ -5,7 +5,7 @@
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 1.5;
 }
 
@@ -29,7 +29,6 @@ header{
 }
 
 .nav-container{
-    margin-top: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -106,7 +105,7 @@ nav img{
     justify-content: center;
     align-items: center;
     width: 100%;
-    min-height: 30vh;
+    min-height: 60vh;
     position: relative;
 }
 .first-background-container .head{
@@ -122,7 +121,22 @@ nav img{
     color: white;
 }
 
+.second-big-container{
+    
+}
 
+.second-container{
+    width: 80%;
+    margin: auto;
+}
+
+.container{
+    padding: 80px 0;
+}
+
+.bold-text{
+    font-weight: 700;
+}
 
   /* fixed nav */
   .fixed-nav {
@@ -145,99 +159,10 @@ nav img{
   }
 
 
-  .second-big-container{
-    padding: 50px 0;
-    display: flex;
-    justify-content: center;
-  }
-
-  .second-container{
-    width: 85%;
-    display: flex;
-    gap: 50px;
-    flex-wrap: wrap;
-    /* border: 2px solid; */
-    
-  }
-  .container-box1{
+  .fifth-big-container{
     background-color: #530278;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    width: 600px;
-    border-radius: 15px;
-    color: white;
-    line-height: 1.5;
-    /* border: 2px solid; */
-
-    }
-    .write-up .small-text{
-    font-size: 1.2rem;
-    }
-    .write-up .big-text{
-    font-size: 1.5rem;
-    font-weight: 700;
-    }
-  .follow-us{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  .social{
-    display: flex;
-    gap: 20px;
-  }
-  .social i{
-    font-size: 1.5rem;
-    cursor: pointer;
-  }
-
-  .container-box2{
-    /* width: 45%; */
-    /* border: 2px solid; */
     display: flex;
     justify-content: center;
-    /* align-items: center; */
-    width: 600px;
-  }
-
-  .content{
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  .content .head{
-    font-size: 3rem;
-    font-weight: 700;
-    color: #530278;
-  }
-
-  .form{
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-    
-.form input{
-    height: 50px;
-    padding-left: 20px;
-}
-
-.form textarea{
-    padding: 20px;
-}
-
-.form .button{
-    background-color: #F3893F;
-    font-weight: 500;
-    border: none;
-}
-.fifth-big-container{
-  background-color: #530278;
-  display: flex;
-  justify-content: center;
 }
 
 .fifth-container{
@@ -247,8 +172,6 @@ nav img{
     gap: 20px;
 
 }
-
-
 
 hr{
     border: 1px solid rgba(128, 128, 128, 0.278);
@@ -312,6 +235,7 @@ hr{
      position: relative;
     }
     .nav-container{
+     margin-top: 15px;
      justify-content: space-between;
      height: 60px;
      /* position: relative; */
@@ -404,11 +328,10 @@ hr{
          cursor: pointer;
          color: white;
      }
-     
-    .second-container{
-        justify-content: center;
-    }
-
+ 
+     .second-container{
+        flex-direction: column;
+     }
  }
  
  @media (max-width: 480px) {
@@ -482,15 +405,70 @@ hr{
      .benefit-containers{
          width: 100%;
      }
-     
-     .second-container{
-        flex-direction: column;
-     }
-
-     .container-box1{
-        width: 100%;
-     }
-     .container-box2{
-        width: 100%;
-     }
+ 
  }
+
+ .bold{
+    font-weight: 700;
+ }
+
+ .autoShow{
+    animation: autoShowAnimation both;
+    animation-timeline: view(70% 20%);
+}
+
+@keyframes autoShowAnimation{
+    from{
+        opacity: 0;
+        transform: translateY(200px) scale(0.3);
+    } to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+.showLeft{
+    animation: showLeftAnimation both;
+    animation-timeline: view(70% 20%);
+}
+
+@keyframes showLeftAnimation{
+    from{
+        opacity: 0;
+        transform: translateX(-200px) scale(0.3);
+    } to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+.showRight{
+    animation: showRightAnimation both;
+    animation-timeline: view(70% 20%);
+}
+
+@keyframes showRightAnimation{
+    from{
+        opacity: 0;
+        transform: translateX(200px) scale(0.3);
+    } to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.autoBlur{
+    animation: autoBlurAnimation both;
+    animation-timeline: view(70% 20%);
+}
+
+@keyframes autoBlurAnimation{
+    0%{
+        filter: blur(4px);
+    }
+    45%, 55%{
+        filter: blur(0px)
+    }
+    100%{
+        filter: blur(4px);
+    }
+}
+

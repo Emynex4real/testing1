@@ -235,6 +235,7 @@ hr{
      position: relative;
     }
     .nav-container{
+     margin-top: 15px;
      justify-content: space-between;
      height: 60px;
      /* position: relative; */
