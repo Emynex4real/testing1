@@ -207,6 +207,8 @@ main{
     background-color: #F3893F;
 }
 .image {
+    position: relative;
+    top: 100px;
     width: 50%;
 }
 .image img{
@@ -895,6 +897,7 @@ hr{
    
    .image {
     width: 70%;
+    top: 0;
    }
 
     .menu{

@@ -497,3 +497,32 @@ hr{
         width: 100%;
      }
  }
+
+ .showLeft{
+    animation: showLeftAnimation both;
+    animation-timeline: view(70% 20%);
+}
+
+@keyframes showLeftAnimation{
+    from{
+        opacity: 0;
+        transform: translateX(-200px) scale(0.3);
+    } to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+.showRight{
+    animation: showRightAnimation both;
+    animation-timeline: view(70% 20%);
+}
+
+@keyframes showRightAnimation{
+    from{
+        opacity: 0;
+        transform: translateX(200px) scale(0.3);
+    } to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
